@@ -1,6 +1,7 @@
 package it.com.pasculli.rps
 
-import org.scalatest._
+import org.scalatest.FlatSpec
+import org.scalatest.Matchers
 
 /**
  * Tests for Move
@@ -33,8 +34,8 @@ class MoveTest extends FlatSpec with Matchers {
   
   "Moves all" should "contain all the moves" in {
     Moves.all should contain (Rock) 
-    Moves.all should contain (Scissors) 
-    Moves.all should contain (Paper) 
+    Moves.all should contain (Scissors)
+    Moves.all should contain(Paper)
   }
 
 }

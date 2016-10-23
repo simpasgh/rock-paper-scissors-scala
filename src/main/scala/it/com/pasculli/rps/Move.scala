@@ -1,7 +1,5 @@
 package it.com.pasculli.rps
 
-import scala.util.Random
-
 /**
  * Represent a move in the game
  */

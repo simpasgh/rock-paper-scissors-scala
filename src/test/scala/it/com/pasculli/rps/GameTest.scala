@@ -2,14 +2,13 @@ package it.com.pasculli.rps
 
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.FunSpec
-import org.scalatest.ShouldMatchers
 import org.scalatest.Matchers
 
 /**
  * Tests for Game
  */
 class GameTest extends FunSpec with Matchers with MockFactory {
-  
+
   describe("A game") {
     describe("Computer VS Computer game") {
       it("return a coherent state of the Computer VS Computer game with the played moves") {
@@ -39,20 +38,20 @@ class GameTest extends FunSpec with Matchers with MockFactory {
       }
     }
   }
-  
+
   describe("Random Computer AI") {
     it("returns a valid random move for the game") {
       List(Rock, Paper, Scissors) contains RandomComputerAI().playMove
     }
   }
-  
+
   /**
    * Returns a mock of the Computer AI
    */
-  private def getAIMock(move : Move) : ComputerAI = {
+  private def getAIMock(move: Move): ComputerAI = {
     val aiMock = mock[RandomComputerAI]
     (aiMock.playMove _).expects().returning(move)
-    
+
     aiMock
   }
 }

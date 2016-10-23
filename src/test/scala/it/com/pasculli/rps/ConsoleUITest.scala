@@ -126,7 +126,7 @@ class ConsoleUITest extends FunSpec with Matchers with MockFactory {
    */
   private def checkMoveSelectionMessage(outputStream: java.io.ByteArrayOutputStream) = {
     outputStream.toString should include(
-      "Chose your move\n" +
+      "Chose your move:\n" +
         "1 - Rock\n" +
         "2 - Paper\n" +
         "3 - Scissors")
@@ -137,7 +137,7 @@ class ConsoleUITest extends FunSpec with Matchers with MockFactory {
    */
   private def checkGameModeSelectionMessage(outputStream: java.io.ByteArrayOutputStream) = {
     outputStream.toString should include(
-      "Choose your game (1,2,3):\n" +
+      "Choose your game:\n" +
         "1- Player vs Computer\n" +
         "2- Computer vs Computer\n" +
         "3- Exit")

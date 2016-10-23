@@ -14,7 +14,7 @@ case class ConsoleUI() {
     var endGame = false
     while (!endGame) {
       val gameModeMsg =
-        "Choose your game (1,2,3):\n" +
+        "Choose your game:\n" +
           "1- Player vs Computer\n" +
           "2- Computer vs Computer\n" +
           "3- Exit"
@@ -44,7 +44,7 @@ case class ConsoleUI() {
     while (!endMatch) {
 
       var moves = scala.collection.mutable.Map[Int, Move]()
-      println("Chose your move")
+      println("Chose your move:")
       //print the selection of the moves
       Moves.all.zipWithIndex.foreach {
         case (e, i) =>

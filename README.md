@@ -8,7 +8,7 @@ The historical game Rock - Paper - Scissors now on your computer! Challenge the 
 
 Ensure that you have [Maven](https://maven.apache.org/), [Java](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html) and [Scala](http://www.scala-lang.org/download/) installed on your machine.
 
-### Installing
+### Install
 
 Build using the following command:
 
@@ -17,6 +17,14 @@ mvn clean install
 ```
 
 This will create the executable jar inside the target folder
+
+### Test
+
+Test using the following command:
+
+```
+mvn test
+```
 
 ### Run
 
